@@ -1,0 +1,181 @@
+body {
+    background: #002754;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    background: #002754;
+    display: inline-block;
+  }
+  
+  h2 {
+    text-decoration: underline;
+    background: #7B6FDE;
+    width: 20%;
+    margin: auto;
+  }
+  
+  div {
+    padding: 20px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  
+  section {
+    width: 50vw;
+    height: 20vw;
+    margin: auto;
+    /* margin-bottom: 100px; */
+  }
+  
+  #one {
+    background: rgb(200,60,60);
+  }
+  
+  #two {
+    font-weight: 400;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+  #space {
+    background: #266ef6;
+  }
+  
+  #power {
+    background: #e429f2;
+  }
+  
+  #soul {
+    background: #ff8b00;
+  }
+  
+  #reality {
+    background: #ff0130;
+  }
+  
+  #mind {
+    background: #ffd300;
+  }
+  
+  #time {
+    background: #12e772;
+  }
+  
+  #scroll {
+    margin-bottom: 2000px;
+  }
+  
+
+
+    /* START BELOW THIS LINE */
+
+
+    /* 1. Below the “START BELOW THIS LINE” comment create another comment and type out the default position value that all html elements start off with */
+
+    /* position: static */
+
+
+    /* 2. Use “position: relative” to move the “Power Stone” to the left of the “Space Stone” (Hint: You need to move it 225px to the left) */
+
+    #power {
+        position: relative;
+        right: 225px;
+    }
+
+
+    /* 3. Use “position: relative” again to move the “Space Stone” below the new location of the  “Power Stone” (Hint: You need to move it 115px to the left and 115px down) */
+    
+    #space {
+        position: relative;
+        right: 115px;
+        top: 115px;
+    }
+
+
+    /* 4. Set a position value on the “Soul Stone” so that is displays on the bottom right corner of the screen, but moves up when you scroll down the webpage */
+    #soul {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+
+
+    /* 5. Set a position value on the “Reality Stone” so that it displays 150px above the bottom right corner of the screen, but also moves up when you scroll down the webpage. */
+    #reality {
+        position: absolute;
+        right: 0px;
+        bottom: 150px;
+    }
+
+
+
+    /* 6. Move the “Mind Stone” up against the right edge of the screen/viewport. Keep it at the same position vertically on the webpage. Also, make it so that it stays in the same location on the screen as you scroll down the webpage. */
+    #mind {
+        position: fixed;
+        right: 0px;
+    }
+
+
+
+    /* 7. Move the “Time Stone” so that it displays in the top right corner of the screen. Also, make it so that it stays in the same location on the screen as you scroll down the webpage. */
+    #time {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+    }
+
+
+
+    /* 8. Use “position: sticky” so the “INFINITY STONES” h1 element will “stick” to the top of the viewport/screen as you scroll down the page */
+    h1 {
+        position: sticky;
+        top: 0px;
+    }
+
+
+
+    /* 9. Have the “INFINITY STONES” h1 element pass in front of the Power and Space stones when you scroll down the webpage  */
+    h1 {
+        z-index: 3;
+    }
+
+
+    /* BONUS */
+
+    /* Have the “Reality Stone” pass in front of the Time and Mind stones when you scroll down the webpage. */
+    #mind {
+        z-index: 1;
+    }
+    
+    #time {
+        z-index: 3;
+    }
+
+    #reality {
+        z-index: 4;
+    }
+
+
+
+    /* Have the “Soul Stone” pass in front of the Mind stone, but behind the Time stone when you scroll down the webpage. (HINT: You may have to change the previous bonus question for this to work) */
+    #soul {
+        z-index: 2;
+    }
+
+
+
+    /* When you are scrolling down the page have the “Other Names” h2 element stick to the bottom of the “INFINITY STONES” h1 element. Also, have the “Colors” h2 element take the place of the “Other Names” h2 element (See Images) (HINT: 65px) */
+    h2 {
+        position: sticky;
+        top: 65px;
+    }
+
